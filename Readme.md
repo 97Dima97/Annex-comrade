@@ -1,5 +1,5 @@
 # function start 
-node comrade.js
+node index.js
 
 # test start
 npm run test
