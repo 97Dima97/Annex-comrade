@@ -1,2 +1,4 @@
-const locale = require('./src/locale')
+import locale from "./src/locale.js";
+
+locale();
 

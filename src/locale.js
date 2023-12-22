@@ -18,7 +18,7 @@ function locale() {
 
     return console.log(localLanguage);
 }
-locale();
 
-module.exports = locale;
+export default locale;
+
 
