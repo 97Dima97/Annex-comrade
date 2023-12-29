@@ -1,4 +1,4 @@
-import locale from "./src/locale.js";
+import { i18n } from "./src/i18n";
+i18n.global.locale
 
-locale();
 

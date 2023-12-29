@@ -1,19 +1,19 @@
 {
-  "type": "module",
-  "name": "comrade",
+  "name": "comradecopi",
   "version": "1.0.0",
   "description": "",
   "main": "index.js",
   "scripts": {
-    "test": "jest"
+    "test": "echo \"Error: no test specified\" && exit 1"
   },
-  "author": "D97",
+  "author": "",
   "license": "ISC",
+  "dependencies": {
+    "babel-jest": "^29.7.0",
+    "i18n": "^0.15.1"
+  },
   "devDependencies": {
     "@babel/core": "^7.23.6",
-    "@babel/node": "^7.22.19",
-    "@babel/preset-env": "^7.23.6",
-    "babel-jest": "^29.7.0",
-    "jest": "^29.7.0"
+    "@babel/preset-env": "^7.23.6"
   }
 }

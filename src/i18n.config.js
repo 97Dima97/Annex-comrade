@@ -1,0 +1,24 @@
+const http = require('http')
+const path = require('path')
+const { I18n } = require('i18n')
+
+const i18n = new I18n({
+    locales: ['ru', 'en', 'kz'],
+    directory: path.join(__dirname, 'locales')
+})
+
+const app = http.createServer((req, res) => {
+    i18n.init(req, res)
+    res.end(res.__('Hello'))
+})
+
+app.listen(3000, '127.0.0.1')
+
+const i18n = require('./i18n')
+
+module.exports = i18n()
+
+module.exports.I18n = i18n
+
+
+
