@@ -13,12 +13,3 @@ const app = http.createServer((req, res) => {
 })
 
 app.listen(3000, '127.0.0.1')
-
-const i18n = require('./i18n')
-
-module.exports = i18n()
-
-module.exports.I18n = i18n
-
-
-

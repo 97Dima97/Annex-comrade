@@ -1,4 +1,12 @@
-import { i18n } from "./src/i18n";
-i18n.global.locale
+const i18n = require('i18n')
+
+
+module.exports = () => {
+    console.log(i18n.__('Hello'));
+}
+
+
+
+
 
 
