@@ -1,7 +1,7 @@
-// import i18n from './src/index'
+import  getMessageInUserLanguage  from './index.js'
 
-// test('message output', () => {
-//     expect(i18n.__('start')).toBe(console.log());
+test('message output', () => {
+    expect(getMessageInUserLanguage()).toBe(console.log());
 
-// });
+});
 

@@ -2,7 +2,7 @@ install:
 npm install
 
 run:
-node app.mjs
+node index.js
 
 
 

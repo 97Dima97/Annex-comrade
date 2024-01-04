@@ -7,7 +7,16 @@ const __dirname = path.dirname(__filename);
 i18n.configure({
     locales: ['ru', 'en', 'kz'],
     directory: path.join(__dirname, 'locales')
-});
+})
 
-export { i18n, path, }
+const getMessageInUserLanguage = () => {
+    let result = navigator.language.slice(0, 2);
+    i18n.setLocale(result);
+    console.log(i18n.__('welcomeMessage'));
+}
+
+export { i18n, path, getMessageInUserLanguage }
+
+
+
 
