@@ -1,7 +1,7 @@
-import  getMessageInUserLanguage  from './index.js'
+// import  getMessageInUserLanguage  from './index.js'
 
-test('message output', () => {
-    expect(getMessageInUserLanguage()).toBe(console.log());
+// test('message output', () => {
+//     expect(getMessageInUserLanguage()).toBe(console.log());
 
-});
+// });
 

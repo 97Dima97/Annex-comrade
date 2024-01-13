@@ -1,4 +1,11 @@
-import { getMessageInUserLanguage } from './src/app.js';
-getMessageInUserLanguage();
+import { getMessage } from './src/app.js';
+import { getGreetingByName } from './src/app.js';
 
-export default getMessageInUserLanguage;
+getMessage();
+
+getGreetingByName();
+
+
+
+
+

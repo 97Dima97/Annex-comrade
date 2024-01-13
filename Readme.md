@@ -1,5 +1,5 @@
 # function start 
-node app.mjs
+node app.js
 
 # Make commands
 
