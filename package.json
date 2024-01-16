@@ -23,6 +23,7 @@
     "babel": "^6.23.0",
     "babel-plugin-transform-import-meta": "^2.2.1",
     "cli": "^1.0.1",
-    "i18n": "^0.15.1"
+    "i18n": "^0.15.1",
+    "readline-sync": "^1.4.10"
   }
 }

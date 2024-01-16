@@ -1,7 +1,8 @@
 import i18n from 'i18n';
 import path from 'path';
 import { fileURLToPath } from 'url';
-import readline from 'readline';
+import readlineSync from 'readline-sync';
+
 
 const __filename = fileURLToPath(import.meta.url);
 const __dirname = path.dirname(__filename);
@@ -16,21 +17,35 @@ const getMessage = () => {
     console.log(i18n.__('welcomeMessage'));
 }
 
-const readLine = readline.createInterface(
-    {
-        input: process.stdin,
-        output: process.stdout
-    }
-);
 
 const getGreetingByName = () => {
-    readLine.question('', function (data) {
-        console.log('Привет ' + data);
-        readLine.close();
-    });
+    const userName = readlineSync.question("Привет! Я программа comrade. А как тебя зовут ? ");
+
+    if (userName === '') {
+        const userResponse = readlineSync.question('Введен не верный вариант ответа , закрыть программу? y/n: ');
+
+        if (userResponse === 'y') {
+            process.exit();
+        }
+
+        if (userResponse === 'n') {
+            return getGreetingByName();
+        }
+
+        if (userResponse !== 'n' || userResponse !== 'y') {
+
+            return console.log('не верное значение');
+        };
+
+    } else {
+
+        console.log('Привет ' + userName);
+    }
+
 }
 
-export { getMessage, getGreetingByName };
+
+export { getMessage, getGreetingByName }
 
 
 
